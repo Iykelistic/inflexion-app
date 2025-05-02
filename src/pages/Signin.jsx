@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState }from 'react'
 import SigninImage from "../assets/images/SigninImage.svg";
 import SigninLogo from "../assets/images/SigninLogo.svg";
 import SigninIcon from "../assets/images/SigninIcon.svg";
@@ -6,11 +6,37 @@ import { FaUser } from "react-icons/fa6";
 import { HiUserCircle } from "react-icons/hi2";
 import { FaKey } from "react-icons/fa6";
 import Switch from '@mui/material/Switch';
-import Footer from "../components/Auth/Footer";
+import { Link, useNavigate} from 'react-router-dom';
+
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
+
+
 export default function Signin() {
+
+    const navigate = useNavigate(); 
+
+    const [signupDetails, setSignupDetails] = useState({
+        email: '',
+        password: ''
+      });
+    
+    
+      const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setSignupDetails(prevState => ({
+          ...prevState,
+          [name]: value
+        }));
+      };
+    
+      const handleSignup = () => {
+        console.log(signupDetails); 
+        navigate('/dashboard'); 
+      };
+
+      
   return (
     <div>
         <div className="signin__container">
@@ -25,10 +51,23 @@ export default function Signin() {
                 <div className="signin__form">
 
                 <label className="signup__label signin__label">Email</label>
-                <input type="text" placeholder="Your email address" className="signup__input signin__input" />
+                <input 
+                type="text"
+                name="email"
+                placeholder="Your email address" 
+                className="signup__input signin__input"
+                value={signupDetails.email} 
+                onChange={handleInputChange} 
+                 />
 
                 <label className="signup__label  signin__label">Password</label>
-                <input type="text" placeholder="Your password" className="signup__input signin__input" />
+                <input 
+                type="text" 
+                placeholder="Your password" 
+                className="signup__input signin__input" 
+                name="password"
+                onChange={handleInputChange}
+                />
                 </div> 
 
                 <div className="signin__switch">
@@ -36,10 +75,10 @@ export default function Signin() {
                     <p className="rem__text">Remember me</p>
                 </div>
                 <div className="button__container signin__button__container">
-                    <button className="signup__button signin__new__button">SIGN UP</button>
+                    <button className="signup__button signin__new__button" onClick={handleSignup}>SIGN UP</button>
                 </div>
 
-                <p className="already__text">Already have an account? <span className="already__span">Sign in</span></p>
+                <Link to="/" className="link__text"><p className="already__text">Don't have an account? <span className="already__span">Sign up</span></p></Link>
             </div>
                
             </div> 

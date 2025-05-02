@@ -4,6 +4,7 @@ import { FaApple } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import Switch from '@mui/material/Switch';
 import { useNavigate } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
@@ -87,10 +88,10 @@ export default function SignupForm() {
             <p className="rem__text">Remember me</p>
           </div>
           <div className="button__container">
-            <button className="signup__button" onClick={handleSignup}>SIGN UP</button> {/* Trigger navigate on click */}
+            <button className="signup__button" onClick={handleSignup}>SIGN UP</button> 
           </div>
 
-          <p className="already__text">Already have an account? <span className="already__span">Sign in</span></p>
+          <Link to="/signin" className="link__text"><p className="already__text">Already have an account? <span className="already__span">Sign in</span></p></Link>
 
         </div>
       </div>

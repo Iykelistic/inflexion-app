@@ -164,3 +164,10 @@
     display: flex;
     justify-content: flex-start;
 }
+
+.link__text {
+    list-style: none;
+    list-style-type: none;
+    color:#A0AEC0 !important;
+    
+}

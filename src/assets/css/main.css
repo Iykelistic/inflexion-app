@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__container {
+    grid-area: main;
+    background: #F8F9FA;
+    overflow: hidden;
+}
+
+.maintable__container {
+    width: 82vw;
+}
+
+.first__table__header {
+    color: #A0AEC0 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 10px !important;
+}
+
+.first__table__name {
+    margin-left: 0.7rem !important;
+    color: #2D3748 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+}
+
+.first__table__name_i {
+    color: #2D3748 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+}
+
+.first__table__edit {
+    color: #718096 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 12px !important;
+}
+
+.second__table__name {
+    color: #2D3748 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+    margin-left: 0.7rem !important;
+}
+
+.second__table__name_i {
+    color: #2D3748 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+} 
+
+
+

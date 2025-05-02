@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard__container {
+    display: grid;
+    grid-template-columns: 1.1fr 4.9fr;
+    grid-template-areas: "sidebar main";
+    background: #F8F9FA;
+    overflow-x: hidden !important;
+    width: 100%;
+}
+
+.border-r {
+    border-right-style: none !important;
+    border-right-width: 0px !important;
+}

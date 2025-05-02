@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signin__container {
+    background: #fff;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.signin__first__content {
+    display: flex;
+    justify-content: flex-start;
+    height: 80vh;
+    background-color: #fff;
+    width: 50vw;
+}
+
+.signin__first__content_i {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 2rem auto;
+}
+
+.signin__second__content {
+    display: flex;
+    justify-content: flex-end;
+    height: 80vh;
+    width: 50vw;
+}
+
+.signin__header__container {
+    width: 80%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.navbar__signin__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__signin__content_i {
+    margin-left: 3rem;
+}
+
+.signin__Logo__icon {
+    color: #2D3748;
+}
+
+.signin__logo__text {
+    color: #2D3748;
+}
+
+.navbar__signin__text {
+    color: #2D3748;
+}
+
+.dashboard__signin__icon {
+    color: #2D3748 !important;
+    
+}
+
+.navbar__signin__end {
+    margin-right: 3rem;
+}
+
+.navbar__signin__button {
+    background-color: #2D3748 ;
+    color: #fff;
+    margin: 0.8rem;
+    height: 40px;
+}
+
+.signin__welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    margin-top: 6rem;
+
+}
+
+.signin__welcome__text {
+    text-align: center;
+    margin: 0 auto;
+    color: #4FD1C5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.signin__enter__text {
+    color: #A0AEC0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.signin__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signin__label {
+    color: #2D3748;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+.signin__input {
+    border: 1px solid #E2E8F0;
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    background: #fff;
+    padding-left: 1.5rem;
+    margin: 0.5rem auto;
+}
+
+.signin__switch {
+    margin-left: -13rem;
+    display: flex;
+}
+
+.signin__new__button {
+    width: 350px;
+}
+
+.signin__button__container {
+    margin-top: 1rem;
+}
+
+.siginin__footer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100% !important;
+    margin-top: 5rem;
+}
+
+.signin__footer__content {
+    display: flex;
+    justify-content: flex-start;
+}

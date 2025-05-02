@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar__container {
+    grid-area: sidebar;
+    background-color: #F8F9FA;
+  }
+
+  .sidebar__logo {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .sidebar__logo__text {
+    color: #2D3748 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 10px;
+  }
+
+  
